@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 750px;
+}
+
+:root {
+  --color-bg: #3b3b6c;
+  --color-active: #0f7dc6;
+}
+
+.navbar {
+  background-color: var(--color-bg);
+  padding: 15px 10px;
+  margin: 10px 0;
+  border-radius: 27px;
+  text-align: center;
+}
+
+.navbar > a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.navbar > a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  padding-top: 10px;
+  text-align: center;
+}
