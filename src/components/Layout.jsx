@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import CustomLink from './CustomLink'
+import Footer from './Footer'
 
 
 const Layout = () => {
@@ -8,15 +9,15 @@ const Layout = () => {
     <>
     <header className='navbar'>
         <CustomLink to='/'>Home</CustomLink>
-        <CustomLink to='/about'>About</CustomLink>
         <CustomLink to='/works'>Works</CustomLink>
+        <CustomLink to='/radafil'>RDFL</CustomLink>
     </header>
     
     <main>
         <Outlet/>
     </main>
 
-    <footer className='footer'>2022 | RDLF</footer>
+    <Footer/>
     </>
   )
 }
