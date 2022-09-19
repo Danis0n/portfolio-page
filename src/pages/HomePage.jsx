@@ -41,7 +41,11 @@ const HomePage = () => {
         fugiat consectetur eius quia dolores?
       </div>
 
-      <CustomButton>Portfolio</CustomButton>
+      <CustomButton
+        href="https://github.com/Danis0n"
+      >
+        Portfolio
+      </CustomButton>
 
       <div className="p__name">Bio</div>
       
