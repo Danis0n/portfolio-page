@@ -11,10 +11,9 @@ const HomePage = () => {
 
       <div className="info">
         <div className='info__text'>
-          <div className="info__name">Danis0n</div>
+          <div className="info__name">Daniel Sopriko</div>
           Java/Kotlin(in future)/Js developer
         </div>
-
         <div className="info__img">
           <img src={Logo} alt='Logo'/>
         </div>
@@ -41,10 +40,8 @@ const HomePage = () => {
         fugiat consectetur eius quia dolores?
       </div>
 
-      <CustomButton
-        href="https://github.com/Danis0n"
-      >
-        Portfolio
+      <CustomButton href="works">
+        Works
       </CustomButton>
 
       <div className="p__name">Bio</div>
@@ -59,7 +56,16 @@ const HomePage = () => {
         enim illo earum.
       </div>
 
-        
+      <div className="p__name">I ♥</div>
+
+      <div className="container">
+        Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. 
+        Architecto quod nesciunt totam ut error 
+        consequuntur fugiat a. Molestias suscipit quae,
+        laudantium consequuntur 
+        amet tenetur quis ipsam ipsum quas odio eius!  
+      </div>       
 
     </div>
   )

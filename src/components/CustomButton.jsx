@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom';
 
-const CustomButton = ({children, href, ...props}) => {
+const CustomButton = ({children, href: to}) => {
 
   const [isHover, setIsHover] = useState(false);
 
@@ -20,17 +21,15 @@ const CustomButton = ({children, href, ...props}) => {
 
   return (
     <div className='btn'>
-        <button
-         onMouseEnter={handleMouseEnter}
-         onMouseLeave={handleMouseLeave} 
-        >
-          <a
-           href={href}
-           style={Style}
-          >
+      <Link
+       onMouseEnter={handleMouseEnter}
+       onMouseLeave={handleMouseLeave}
+       to={to}
+      >
+        <button style={Style}>
             {children}
-          </a>
         </button>
+          </Link>
     </div>
   )
 }

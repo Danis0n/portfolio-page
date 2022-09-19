@@ -9,13 +9,15 @@ const CustomLink = ({children, to, ...props}) => {
         end: to.length === 1,
     });
 
+    const LinkStyle = {
+      color: match ? 'var(--color-active)' : 'white ',
+      background: 'var(--color-bg)'
+    }
+
   return (
     <Link
      to={to} 
-     style={{
-        color: match ? 'var(--color-active)' : 'white ',
-        background: 'var(--color-bg)'
-     }}
+     style={LinkStyle}
      {...props}
     >
         {children}

@@ -41,6 +41,8 @@ body {
 
 .info__name {
   font-size: 40px;
+  font-weight: 600;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .info__text {
@@ -64,7 +66,8 @@ body {
   text-decoration-color: black;
   margin-bottom: 20px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .btn {
@@ -77,6 +80,7 @@ body {
   border-radius: 5px;
   color: ghostwhite;
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .btn button:hover {
@@ -106,5 +110,8 @@ body {
 
 /* Footer */
 .footer {
+  font-size: 13px;
   text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
