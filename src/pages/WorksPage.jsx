@@ -1,18 +1,13 @@
 import React, {useState} from 'react'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import { styled } from '@mui/material/styles';
-import { Paper } from '@mui/material';
+import WorkItem from '../components/WorkItem';
+import Boys from '../public/img/boys.jpg'
+import Clown from '../public/img/clown.jpg'
+import Who from '../public/img/who.jpg'
+import Geralt from '../public/img/geralt.jpg'
 
 const WorksPage = () => {
-
-  const Item = styled(Paper)(({ theme }) => ({
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    background: 'var(--color-background)'
-  }));
-
-  const [spacing, setSpacing] = useState(2);
 
   return (
     <div className='container'>
@@ -22,49 +17,43 @@ const WorksPage = () => {
       }}>
         Works
       </div>
-{/* 
-    <Grid sx={{ flexGrow: 1 }} container spacing={2}>
-      <Grid item xs={12}>
-        <Grid container justifyContent="center" spacing={spacing}>
-          {[0, 1, 2, 3].map((value) => (
-            <Grid key={value} item>
-              <Paper
-                sx={{
-                  height: 140,
-                  width: 100,
-                  backgroundColor: (theme) =>
-                    theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-                }}
-              />
-            </Grid>
-          ))}
 
-        </Grid>
-      </Grid>
-    </Grid> */}
-
-    <Box sx={{ width: '75%' }}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+    <Box sx={{ width: '100%' }}>
+      <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={6} className='container'>
-          A video work generated with deep learning,
-          imitating famous four
-          painters like Van Gogh
-        </Grid>
-        <Grid item xs={6} className='container'>
-          A video work generated with deep learning,
-          imitating famous four
-          painters like Van Gogh
+          <WorkItem img={Geralt}>
+            <div className="work__name">WORK1</div>
+            Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit.
+            At necessitatibus dolores ullam 
+          </WorkItem>
         </Grid>
 
         <Grid item xs={6} className='container'>
-          A video work generated with deep learning,
-          imitating famous four
-          painters like Van Gogh
+          <WorkItem img={Clown}>
+            <div className="work__name">WORK2</div>
+            Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit.
+            At necessitatibus dolores ullam 
+          </WorkItem>
+        </Grid>
+        
+
+        <Grid item xs={6} className='container'>
+          <WorkItem img={Boys}>
+            <div className="work__name">WORK3</div>
+            Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit.
+            At necessitatibus dolores ullam 
+          </WorkItem>
         </Grid>
         <Grid item xs={6} className='container'>
-          A video work generated with deep learning,
-          imitating famous four
-          painters like Van Gogh
+          <WorkItem img={Who}>
+            <div className="work__name">WORK4</div>
+            Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit.
+              At necessitatibus dolores ullam 
+          </WorkItem>
         </Grid>
       </Grid>
     </Box>

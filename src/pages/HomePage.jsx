@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="mainPanel">
-        Hello, I'am indie back-end developer from Russia!
+        Hello, I'm an indie back-end developer based Russia!
       </div>
 
       <div className="info">
